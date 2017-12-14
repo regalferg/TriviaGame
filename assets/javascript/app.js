@@ -37,23 +37,25 @@ $('input[name=optionRadio3]:checked').val(),
 for (var i = 0; i < answers.length; i++) {
   console.log(answers[i]);
   
-  if (answers[i] == 7) {
+  if (answers[i] == "7") {
     correctAnswer++;
-    $("#correct").text(correctAnswer);
+    
 
   }
-   if (answers[i] == 0) {
+   if (answers[i] == "0") {
     incorrectAnswer++;
-    $("#incorrect").text(incorrectAnswer);
+    
 
 }
 else  {
    noAnswer++;
-    $("#noanswer").text(noAnswer);
+    
 
 }
 }
-
+$("#correct").text(correctAnswer);
+$("#incorrect").text(incorrectAnswer);
+$("#noanswer").text(noAnswer);
 
 
 }
