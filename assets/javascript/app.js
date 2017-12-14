@@ -22,6 +22,7 @@ run();
 $("#submit-button").on("click", function(){
 $("form").css("display", "none");
 $(".wrapper2").css("display", "block");
+clearInterval(intervalId);
 triviaStart();
 });
 
@@ -38,17 +39,17 @@ for (var i = 0; i < answers.length; i++) {
   
   if (answers[i] == 7) {
     correctAnswer++;
-    $("#correct").html(correctAnswer);
+    $("#correct").text(correctAnswer);
 
   }
    if (answers[i] == 0) {
     incorrectAnswer++;
-    $("#incorrect").html(incorrectAnswer);
+    $("#incorrect").text(incorrectAnswer);
 
 }
 else  {
    noAnswer++;
-    $("#noanswer").html(noAnswer);
+    $("#noanswer").text(noAnswer);
 
 }
 }
