@@ -1,11 +1,14 @@
-var correctAnswer = 0;
+
+
+
+$(document).ready(function(){
+
+
+  var correctAnswer = 0;
 var incorrectAnswer = 0;
 var noAnswer = 0;
 var time = 10;
 var intervalId;
-
-
-$(document).ready(function(){
 
 // GAME START
 $("#start-button").on("click", function(){
