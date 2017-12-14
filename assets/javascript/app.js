@@ -4,7 +4,7 @@
 $(document).ready(function(){
 
 
-  var correctAnswer = 0;
+var correctAnswer = 0;
 var incorrectAnswer = 0;
 var noAnswer = 0;
 var time = 10;
@@ -50,7 +50,7 @@ for (var i = 0; i < answers.length; i++) {
     
 
 }
-else  {
+else if(!answers[i])  {
    noAnswer++;
     
 
@@ -74,7 +74,7 @@ function run() {
 function decrement() {
       time--;
 
-      $("#display").html("<h2>" + time + "</h2>");
+      $("#display").html("<h2> Time Left: " + time + "</h2>");
       if (time == 0) {
         clearInterval(intervalId);
         triviaStart();
