@@ -7,7 +7,7 @@ $(document).ready(function(){
 var correctAnswer = 0;
 var incorrectAnswer = 0;
 var noAnswer = 0;
-var time = 10;
+var time = 45;
 var intervalId;
 
 // GAME START
