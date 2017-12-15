@@ -29,6 +29,8 @@ clearInterval(intervalId);
 triviaStart();
 });
 
+
+//Trivia Start Function
 function triviaStart(){
   $("form").css("display", "none");
 $(".wrapper2").css("display", "block");

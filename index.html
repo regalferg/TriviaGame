@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>It's Trivia Dudes!</title>
-				<!-- Added a link to Bootstrap-->
+		<!-- Added a link to Bootstrap-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -13,89 +13,64 @@
 	<body>
 		<div class="container">
 			
-		<div class="row">
-			<div class="wrapper col-lg-12 col-md-12">
-
-	<h1>Totally Pauly Trivia!!!</h1>
-
-	<input id= start-button type="button" class="startBtn" value="START">
-	<!-- END Header COL -->
-
-<!-- END Start Col -->
-</div>
-<!-- END Wrapper -->
-</div>
-
+			<div class="row">
+				<div class="wrapper col-lg-12 col-md-12">
+					<h1>Totally Pauly Trivia!!!</h1>
+					<input id= start-button type="button" class="startBtn" value="START">
+					<!-- END Header COL -->
+					<!-- END Start Col -->
+				</div>
+				<!-- END Wrapper -->
+			</div>
 			<div class="options col-lg-12 col-md-12">
-
-		<form  id="triviaForm" class="">
-			<div class="page-header">Totally Pauly Trivia!</div>
-			<div id="display"></div>
-
-			<fieldset id="group1">
-			<h2>Which of the following bands played at the "Save The Rainforests" rally in Biodome?</h2>
-			<input id="option-1" name="optionRadio1" type="radio" value="0"><span>PHISH</span>
-
-			<input id="option-2" name="optionRadio1" type="radio" value="7"> <span>Tenacious D</span>
-			<input id="option-3" name="optionRadio1" type="radio" value="0">
-			<span>Hootie &amp; the Blowfish</span> 
-			</fieldset>
-			<br>
-			<fieldset id="group2">
-			<h2>In the movie "Encino Man", where did the heroes "wheez the juice"?</h2>
-			<input id="option-4" name="optionRadio2" type="radio" value="7"><span>Food Mart 7 </span> 
-			<input id="option-5" name="optionRadio2" type="radio" value="0"><span>Circle K</span> 
-			<input id="option-6" name="optionRadio2" type="radio" value="0"><span>7-11</span> 
-			</fieldset>
-			<br>
-			<fieldset id="group3">
-			<h2>What was Pauly Shore's nickname?</h2>
-			<input id="option-7" name="optionRadio3" type="radio" value="0"><span>BU-DDY</span> 
-			<input id="option-8" name="optionRadio3" type="radio" value="7"> <span>The Weasel</span>
-			<input id="option-9" name="optionRadio3" type="radio" value="0"><span>Stoney</span> 
-			</fieldset>
-			<br>
-			<input id="submit-button" type="button" value="Submit">
-
-		</form>
-		<!-- END OF COL One -->
-		</div>
-
-
-
-
-	<div class="wrapper2 col-lg-12 col-md-12">
-		<div class="page-header">Totally Pauly Trivia!</div>
-		<div class="row">
-			<div class="col-xs-12">
+				<form  id="triviaForm" class="">
+					<div class="page-header">Totally Pauly Trivia!</div>
+					<div id="display"></div>
+					<fieldset id="group1">
+						<h2>Which of the following bands played at the "Save The Rainforests" rally in Biodome?</h2>
+						<input id="option-1" name="optionRadio1" type="radio" value="0"><span>PHISH</span>
+						<input id="option-2" name="optionRadio1" type="radio" value="7"> <span>Tenacious D</span>
+						<input id="option-3" name="optionRadio1" type="radio" value="0">
+						<span>Hootie &amp; the Blowfish</span>
+					</fieldset>
+					<br>
+					<fieldset id="group2">
+						<h2>In the movie "Encino Man", where did the heroes "wheez the juice"?</h2>
+						<input id="option-4" name="optionRadio2" type="radio" value="7"><span>Food Mart 7 </span>
+						<input id="option-5" name="optionRadio2" type="radio" value="0"><span>Circle K</span>
+						<input id="option-6" name="optionRadio2" type="radio" value="0"><span>7-11</span>
+					</fieldset>
+					<br>
+					<fieldset id="group3">
+						<h2>What was Pauly Shore's nickname?</h2>
+						<input id="option-7" name="optionRadio3" type="radio" value="0"><span>BU-DDY</span>
+						<input id="option-8" name="optionRadio3" type="radio" value="7"> <span>The Weasel</span>
+						<input id="option-9" name="optionRadio3" type="radio" value="0"><span>Stoney</span>
+					</fieldset>
+					<br>
+					<input id="submit-button" type="button" value="Submit">
+				</form>
+				<!-- END OF COL One -->
+			</div>
+			<div class="wrapper2 col-lg-12 col-md-12">
+				<div class="page-header">Totally Pauly Trivia!</div>
 				<div class="row">
-					<div class="center col-xs-12">
-						<h1>All Done!</h1>
-						<h3>Correct Answers:&nbsp;</h3><span id="correct"></span>
-						<h3>Incorrect Answers:&nbsp;</h3><span id="incorrect"></span>
-						<h3>Unanswered Questions:&nbsp;</h3><span id="noanswer"></span>
-
-
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="center col-xs-12">
+								<h1>All Done!</h1>
+								<h3>Correct Answers:&nbsp;</h3><span id="correct"></span>
+								<h3>Incorrect Answers:&nbsp;</h3><span id="incorrect"></span>
+								<h3>Unanswered Questions:&nbsp;</h3><span id="noanswer"></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+			
+			<!-- END of Container -->
 		</div>
-
-	</div>
-	
-
-
-
-
-
-		
-
-		<!-- END of Container -->
-		</div>
-
-
-
-
 		
 		<!-- Scripts -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
